@@ -1,40 +1,158 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
 
-    <title>About Me</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!--reset-->
+    <link rel="stylesheet" href="assets/reset.css">
+
+
+    <!--favicon and image-->
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+
+    <!--google font family-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Orbitron&family=Varela+Round&display=swap"
+        rel="stylesheet">
+
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!--style css-->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-    <header class='masthead'>
-        <p class='masthead-intro'>Hi I'm</p>
-        <h1 class='masthead-heading'>Vinh Huynh</h1>
-    </header>
-    <section class="details">
-      <h1>Introduction</h1>
-      <p>I am a Student</p>
-      <h1>Where I'm From</h1>
-      <p>Vietnam</p>
-      <h1>What are your favorite hobbies?</h1>
-      <p>Learning new food recipes</p>
-      <h1>What's your dream job?</h1>
-      <p>Able to work remotely and travel</p>
-      <h1>Where do you live?</h1>
-      <p>Clifton Heights</p>
-      <h1>Why do you want to be a web developer?</h1>
-      <p>Building a professional Career</p>
-    </section>
 
-    <footer id="footer">
-        <ul class="social">
-          <li><a href="http://www.github.com/usernamehere">Github</a></li>
-        </ul>
+    <header class="header-brand">Welcome World </header>
+
+    <!-- Add navbar with toggle button -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <main>
+        <div class="container-fluid" id="border">
+
+
+            <header class="row header-background">
+                <h1 class="col-sm-9 header title">
+                    About Me
+                </h1>
+            </header>
+
+            <hr>
+
+            <!--first section about me-->
+            <section class="row justify-content-center">
+
+                <div class="col-sm-9">
+
+                    <div class="row">
+                        <div class="d-block clearfix">
+                            <figure>
+                                <img src="assets/images/self.jpg" class="float-start m-3 img-thumbnail" id="self"
+                                    alt="Portrait shot of self(vinh) with Eiffel tower in background">
+                            </figure>
+
+                            <article>
+                                <p>WELCOME TO MY FIRST WEBPAGE!! <br> My name is Vinh Huynh and I enjoy meeting new
+                                    people and finding ways to help them have an uplifting experience. I was born in
+                                    Vietnam and moved to the US when I was twelve. I'm currently working at Verizon as a
+                                    Sales Representative and going to school part time for full stack web development. I
+                                    have had a variety of customer service opportunities, through which I was able to
+                                    have fewer returned products and increased repeat customers, when compared with
+                                    co-workers. I am dedicated, outgoing, and a team player. I'm looking forward to
+                                    finish this boot camp and find a new career for myself.
+                                </p>
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--second section about My family-->
+            <section class="row justify-content-center">
+
+                <div class="col-sm-9">
+
+                    <div class="row">
+
+                        <div class="d-block cleafix">
+                            <figure>
+                                <img src="assets/images/family.jpg" class="img-thumbnail float-end m-3" id="family"
+                                    alt="My family myself left, my wife(Vi) right, and my daughter(Ariel) in the middle, with kelly drive in the background">
+                            </figure>
+                            <article>
+                                <p>MY HAPPY FAMILY!! <br> I'm happily married to my wife Vi Pham for two years. We have
+                                    a one year old daughter name Ariel. Her nickname is "Bacon". My family is Chinese
+                                    and Ariel was born in 2019 which is the year of the Pig, hence the nickname. We
+                                    lived in a small townhouse in Clifton Heights. It's about half an hour from Philly.
+                                    My wife has been very supportive with my school. I'm looking forward to a new
+                                    exciting career where I can provide better for my little family.
+                                </p>
+                            </article>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="container-fluid footer footer-bg">
+        <nav class="navbar">
+            <div class="mx-auto">
+
+                <a href="https://www.linkedin.com/in/vinhkhuynh/" class="linkedin" target="_blank" ><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/vinhkhamhuynh" class="github" target="_blank"><i class="fa fa-github"></i></a>
+
+            </div>
+        </nav>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
